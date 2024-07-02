@@ -12,13 +12,13 @@ def main():
     # read video
     # path to the video file. replace this with the path to the video file you want to process
     video_frames = read_video(
-        'D:/Computer_Vision/Kora.ai/Kora.ai/input_videos/08fd33_4.mp4')
+        '../input/08fd33_4.mp4')
 
     # intialize tracker
-    tracker = Tracker('D:/Computer_Vision/Kora.ai/Kora.ai/models/best.pt')
+    tracker = Tracker('models/best.pt')
 
     tracks = tracker.get_tracks(video_frames, read_from_stub=True,
-                                stub_path='D:/Computer_Vision/Kora.ai/Kora.ai/stubs/track_stubs.pkl')
+                                stub_path='stubs/track_stubs.pkl')
 
     # get object positions
     tracker.add_positions_to_tracks(tracks)
@@ -26,7 +26,7 @@ def main():
     # camera movement estimation
     camera_estimator = CameraEstimator(video_frames[0])
     camera_movement_per_frame = camera_estimator.get_camera_movement(
-        video_frames, read_from_stub=True, stub_path='D:/Computer_Vision/Kora.ai/Kora.ai/stubs/camera_movement_stubs.pkl')
+        video_frames, read_from_stub=True, stub_path='stubs/camera_movement_stubs.pkl')
 
     camera_estimator.adjust_positions_to_tracks(
         tracks, camera_movement_per_frame)
@@ -97,7 +97,7 @@ def main():
     # save the video
     # path to save the output video. replace this with the path where you want to save the output video
     save_video(
-        output_video_frames, 'D:/Computer_Vision/Kora.ai/Kora.ai/output_videos/output.avi')
+        output_video_frames, '../output/output.avi')
 
 
 if __name__ == '__main__':
