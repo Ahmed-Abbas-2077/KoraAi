@@ -1,4 +1,4 @@
-# Kora.ai ⚽ AI Video Analysis using OpenCV, PyTorch, and YOLO 🎥📊
+# KoraAi ⚽ AI Video Analysis using OpenCV, PyTorch, and YOLO 🎥📊
 
 ![Python](https://img.shields.io/badge/python-3.9.19-blue.svg)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.10.0.84-green.svg)
@@ -26,8 +26,8 @@ Use **[OpenCV](https://opencv.org/)** and **[YOLOv5](https://github.com/ultralyt
 ## 🛠️ Installation
 
 ### 1. Clone this repository:
-    git clone https://github.com/Ahmed-Abbas-2077/Kora.ai.git
-    cd Kora.ai/
+    git clone https://github.com/Ahmed-Abbas-2077/KoraAi.git
+    cd KoraAi/
 
 ### 2. Install the required packages:
     pip install -r requirements.txt
@@ -50,7 +50,7 @@ This project is licensed under the **MIT** License - see the **LICENSE** file fo
 
 
 ## 🎉 Acknowledgments
-- **Kora.ai** has been inspired by this engaing 4-hour youtube [video](https://www.youtube.com/watch?v=neBZ6huolkg)
+- **KoraAi** has been inspired by this engaing 4-hour youtube [video](https://www.youtube.com/watch?v=neBZ6huolkg)
 - [Ultralytics](https://ultralytics.com/), for their versatile YOLO models which are foundational to Kora.ai's object detection tasks.
 - [Roboflow](https://roboflow.com/), for providing the dataset and tools necessary for model training.
 - [OpenCV](https://opencv.org/), for their incredible computer vision library.
